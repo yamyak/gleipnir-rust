@@ -15,4 +15,8 @@ impl Chain {
   {
     self.m_blocks.push(block);
   }
+
+  pub fn get_chain(&self) -> &Vec<Block> {
+    &self.m_blocks
+  }
 }
